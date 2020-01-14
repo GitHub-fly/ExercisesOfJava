@@ -70,6 +70,6 @@ public class IOExample {
     }
     public static void main(String[] args) {
         int[] arr = randomInteger(100, 100);
-        write(arr, "/randomInt.txt");
+        write(arr, "randomInt.txt");
     }
 }
