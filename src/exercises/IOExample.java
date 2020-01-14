@@ -39,7 +39,7 @@ public class IOExample {
     public static void write(int[] arr, String filePath) {
         String encode = "UTF-8";
         FileOutputStream fos = null;
-        OutputStreamWriter out = null;
+        Writer out = null;
         try {
             fos = new FileOutputStream(new File(filePath), true);
             out = new OutputStreamWriter(fos, encode);
@@ -70,6 +70,6 @@ public class IOExample {
     }
     public static void main(String[] args) {
         int[] arr = randomInteger(100, 100);
-        write(arr, "/randomInt.txt");
+        write(arr, "randomInt.txt");
     }
 }
