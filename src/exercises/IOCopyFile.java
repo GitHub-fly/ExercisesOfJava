@@ -11,6 +11,7 @@ import java.io.*;
  **/
 public class IOCopyFile {
 
+
     /**
      * 通过缓冲字节流实现图片类型文件的拷贝功能
      * @param fromPath 指定文件的路径
@@ -104,5 +105,6 @@ public class IOCopyFile {
     public static void main(String[] args) {
         byteStreamCopy("E:\\图库\\杂图\\微信头像.jpg", "E:\\图库\\杂图\\微信头像(1).jpg");
         characterStreamCopy("C:\\Users\\Asus\\Desktop\\IOExample.java", "C:\\Users\\Asus\\Desktop\\IOExample(1).java");
+
     }
 }
