@@ -1,4 +1,4 @@
-package exercises;
+package exercises.IO;
 
 import java.io.*;
 
@@ -16,10 +16,12 @@ public class Student implements Serializable, Cloneable {
     private int age;
 
     public String getName() {
+        System.out.println("Student类中的getName()方法被调用");
         return name;
     }
 
     public void setName(String name) {
+        System.out.println("Student类中的name属性被赋值为：" + name);
         this.name = name;
     }
 

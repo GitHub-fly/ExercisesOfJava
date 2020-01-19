@@ -1,4 +1,4 @@
-package exercises;
+package exercises.IO;
 
 import java.io.*;
 import java.time.LocalDateTime;
@@ -6,7 +6,7 @@ import java.util.Random;
 
 /**
  * @author xunmi
- * @ClassName exercises.IOExample
+ * @ClassName exercises.IO.IOExample
  * @Description 程序随机生成100个0-99之间的随机整数存入数组，选择一种合适的流，将该
  * 数组的100个整数写入本地文件。
  * @Date 2020/1/13

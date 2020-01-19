@@ -1,4 +1,4 @@
-package exercises;
+package exercises.reflect;
 
 import java.io.File;
 import java.util.ArrayList;

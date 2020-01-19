@@ -1,6 +1,4 @@
-package exercises;
-
-import com.sun.jdi.InvocationException;
+package exercises.IO;
 
 import java.io.IOException;
 import java.lang.reflect.Constructor;
