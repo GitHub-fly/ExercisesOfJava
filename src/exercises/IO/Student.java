@@ -46,6 +46,13 @@ public class Student implements Serializable, Cloneable {
         return super.clone();
     }
 
+//    public Student() {
+//
+//    }
+//    public Student(String name) {
+//        this.name = name;
+//    }
+
     @Override
     public String toString() {
         return "Student{" +
