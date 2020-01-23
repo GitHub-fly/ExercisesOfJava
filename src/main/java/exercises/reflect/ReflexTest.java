@@ -1,6 +1,5 @@
 package exercises.reflect;
 
-import jdk.jshell.MethodSnippet;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

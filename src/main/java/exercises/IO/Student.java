@@ -16,12 +16,12 @@ public class Student implements Serializable, Cloneable {
     private int age;
 
     public String getName() {
-        System.out.println("Studentç±»ä¸­çš„getName()æ–¹æ³•è¢«è°ƒç”¨");
+        System.out.println("StudentÀàÖĞµÄgetName()·½·¨±»µ÷ÓÃ");
         return name;
     }
 
     public void setName(String name) {
-        System.out.println("Studentç±»ä¸­çš„nameå±æ€§è¢«èµ‹å€¼ä¸ºï¼š" + name);
+        System.out.println("StudentÀàÖĞµÄnameÊôĞÔ±»¸³ÖµÎª£º" + name);
         this.name = name;
     }
 
@@ -46,13 +46,6 @@ public class Student implements Serializable, Cloneable {
         return super.clone();
     }
 
-//    public Student() {
-//
-//    }
-//    public Student(String name) {
-//        this.name = name;
-//    }
-
     @Override
     public String toString() {
         return "Student{" +
@@ -63,14 +56,14 @@ public class Student implements Serializable, Cloneable {
     }
 
     /**
-     * åºåˆ—åŒ–
+     * ĞòÁĞ»¯
      * @throws IOException
      */
     public static void serializeStudent() throws IOException {
         Student student = new Student();
-        student.setName("æˆ‘è¦å®ç°åºåˆ—åŒ–å’Œååºåˆ—åŒ–");
+        student.setName("ÎÒÒªÊµÏÖĞòÁĞ»¯ºÍ·´ĞòÁĞ»¯");
         student.setAge(16);
-        student.setGender("ç”·");
+        student.setGender("ÄĞ");
         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(new File("E:/studentTest.txt")));
         oos.writeObject(student);
         oos.flush();
@@ -78,8 +71,8 @@ public class Student implements Serializable, Cloneable {
     }
 
     /**
-     * ååºåˆ—åŒ–
-     * @return è¿”å›ååºåˆ—åŒ–åçš„å¯¹è±¡ä¿¡æ¯
+     * ·´ĞòÁĞ»¯
+     * @return ·µ»Ø·´ĞòÁĞ»¯ºóµÄ¶ÔÏóĞÅÏ¢
      * @throws Exception
      */
     public static Student deserializeStudent() throws IOException, ClassNotFoundException {
