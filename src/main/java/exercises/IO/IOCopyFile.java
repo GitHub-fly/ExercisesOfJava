@@ -105,6 +105,5 @@ public class IOCopyFile {
     public static void main(String[] args) {
         byteStreamCopy("E:\\图库\\杂图\\微信头像.jpg", "E:\\图库\\杂图\\微信头像(1).jpg");
         characterStreamCopy("C:\\Users\\Asus\\Desktop\\IOExample.java", "C:\\Users\\Asus\\Desktop\\IOExample(1).java");
-
     }
 }
