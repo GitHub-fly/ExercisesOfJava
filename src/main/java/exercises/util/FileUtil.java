@@ -40,13 +40,20 @@ public class FileUtil {
             fos = new FileOutputStream(new File(StringUtil.splitPicName(urlPath)));
             bos = new BufferedOutputStream(fos);
 
-            while ((bis.read(temp)) != -1) {
-                bos.write(temp);
+            /**
+             * 此处做了修改，
+             * 原先使用的是bos.write(temp),只有一个参数的Write方法
+             * 现在修改成了三个参数的write方法
+             */
+            int length = 0;
+            while ((length = bis.read(temp, 0, temp.length)) != -1) {
+                bos.write(temp, 0, length);
             }
         } catch (IOException e) {
             System.out.println("出现IO异常");
         } finally {
             try {
+                bos.flush();
                 bis.close();
                 bos.close();
             } catch (IOException e) {

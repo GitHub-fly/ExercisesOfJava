@@ -39,7 +39,6 @@ class DownLoad implements Runnable {
             "http://sunui-uniapp.oss-cn-beijing.aliyuncs.com/uniapp/1576836442692117.png",
             "http://sunui-uniapp.oss-cn-beijing.aliyuncs.com/uniapp/157683644272795.png",
             "http://sunui-uniapp.oss-cn-beijing.aliyuncs.com/uniapp/157683671798927.png",
-            "http://sunui-uniapp.oss-cn-beijing.aliyuncs.com/uniapp/157683671798927.png",
             "http://sunui-uniapp.oss-cn-beijing.aliyuncs.com/uniapp/157688830882147.png",
             "http://sunui-uniapp.oss-cn-beijing.aliyuncs.com/uniapp/157688830886870.png"
     };
