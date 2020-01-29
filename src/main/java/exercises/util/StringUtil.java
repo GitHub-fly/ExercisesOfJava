@@ -1,5 +1,8 @@
 package exercises.util;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * @author xunmi
  * @ClassName StringUtil
@@ -16,6 +19,16 @@ public class StringUtil {
      */
     public static String splitPicName(String urlPath) {
         return urlPath.substring(urlPath.lastIndexOf("/") + 1 );
+    }
+
+    /**
+     * 获取当前系统时间
+     * 格式： 2020-01-29 15:13:16
+     * @return
+     */
+    public static String getCurrentDate() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return simpleDateFormat.format(new Date());
     }
 
 }
