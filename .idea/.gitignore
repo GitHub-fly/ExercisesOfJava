@@ -19,11 +19,11 @@ HELP.md
 *.iws
 *.iml
 *.ipr
-target/
 ##忽略这些文件夹
 logs/
 .idea/
 .mvn/
+*/target/
 */test/
 .gitignore
 ##忽略这些后缀的文件
